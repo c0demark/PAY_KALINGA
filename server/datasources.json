@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+    "PayKalinga": {
+      "name": "PayKalinga",
+      "connector": "mongodb",
+      "url": "mongodb://localhost:27017/PayKalinga",
+      "username": "root",
+      "password": "root"
+  }
+}
