@@ -1,0 +1,27 @@
+{
+    "name": "UserAccount",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "currentBalance": {
+            "type": "number",
+            "required": "true"
+        },
+        "kalingaUserId": {
+            "type": "number",
+            "required": true
+        }
+    },
+    "validations": [],
+    "relations": [],
+    "acls": [
+        {
+            "principalType": "ROLE",
+            "principalId": "$authenticated",
+            "permission": "ALLOW",
+            "property": "*",
+            "accessType": "*"
+        }
+    ],
+    "methods": []
+}
